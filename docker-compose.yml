@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
       args:
         # Reads STEAMAPPBRANCH from your .env file to set the build version (ARG).
-        - STEAMAPPBRANCH=${STEAMAPPBRANCH}
+        - STEAMAPPBRANCH=unstable
     env_file:
       - .env
     ports:
